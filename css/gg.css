@@ -1,0 +1,330 @@
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 100px;
+}
+
+/*nav部分*/
+.nav {
+    width: 100%;
+    height: 1rem;
+}
+
+.box-top {
+    margin: 0 auto;
+    max-width: 10.4rem;
+    height: 1rem;
+}
+
+.box-top .nav_logo {
+    float: left;
+    margin-top: .22rem;
+    width: 2.22rem;
+}
+
+/*.box-top .nav_logo a{
+    display: block;
+}*/
+.box-top .nav_logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.box-top .nav_ul {
+    float: left;
+    margin-left: .2rem;
+}
+
+.box-top .nav_ul .nav_ul_list {
+    float: left;
+    position: relative;
+    margin-right: .05rem;
+    line-height: 1rem;
+}
+
+.box-top .nav_ul .nav_ul_list .nav_ul_a {
+    display: block;
+    width: 1.04rem;
+    text-align: center;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #5a5a5a;
+}
+
+.box-top .nav_ul .nav_ul_list .nav_ul_a:hover {
+    background-color: #f7941d;
+    color: #fff;
+}
+
+.box-top .nav_ul .nav_ul_list ul {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    /* border-top: 1px solid #fff;*/
+    width: 1.68rem;
+    /*  background-color: #000;*/
+    z-index: 100;
+}
+
+.nav_ul_list .zherao {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    /* border-top: 1px solid #fff;*/
+    width: 1.68rem;
+    height: .78rem;
+    background-color: #000;
+    z-index: 99;
+    opacity: .4;
+}
+
+.nav_ul_list .zherao2 {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    /* border-top: 1px solid #fff;*/
+    width: 1.68rem;
+    height: .26rem;
+    background-color: #000;
+    z-index: 99;
+    opacity: .4;
+}
+
+.box-top .nav_ul .nav_ul_list:hover ul {
+    display: block;
+}
+
+.box-top .nav_ul .nav_ul_list:hover .zherao {
+    display: block;
+}
+
+.box-top .nav_ul .nav_ul_list:hover .zherao2 {
+    display: block;
+}
+
+.box-top .nav_ul .nav_ul_list:hover ul li {
+    height: .26rem;
+    line-height: .26rem;
+}
+
+.box-top .nav_ul .nav_ul_list:hover ul li a {
+    display: block;
+    padding-left: .2rem;
+    color: #fff;
+    height: .26rem;
+}
+
+.box-top .nav_ul .nav_ul_list:hover ul li a:hover {
+    background-color: #f7941d;
+}
+
+.box-top .nav_left {
+    float: right;
+    margin-right: .4rem;
+}
+
+.box-top .nav_left a {
+    display: block;
+    margin-top: .38rem;
+    width: .31rem;
+    height: .18rem;
+    position: relative;
+
+}
+
+.box-top .nav_left a img {
+    height: 100%;
+    width: 100%;
+}
+
+.box-top .nav_left a div {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -1.6rem;
+    width: 2.5rem;
+    height: .5rem;
+    /*background: cadetblue;*/
+    z-index: 102;
+}
+
+.box-top .nav_left a div input {
+    height: .3rem;
+    width: 1.9rem;
+    margin-top: .25rem;
+    border: 1px solid #00a4a6;
+    padding-left: .1rem;
+}
+
+.box-top .nav_left a div span {
+    display: inline-block;
+    margin-left: -.4rem;
+    width: .4rem;
+    /* height: .32rem;*/
+    line-height: .31rem;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #00a4a6;
+    vertical-align: middle;
+}
+
+.box-top .nav_left a:hover div {
+    display: block;
+}
+
+/*大轮播图部分*/
+.banner1 {
+    position: relative;
+    /*margin: 10px auto;*/
+    width: 100%;
+    height: 4.93rem;
+    overflow: hidden;
+}
+
+/*轮播图区域的样式*/
+.banner1 .bannerInner1 {
+    width: 100%;
+    height: 4.93rem;
+    background: url("../img/logo.png") no-repeat center center #e1e1e1;
+}
+
+.banner1 .bannerInner1 div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /*设置每一张图片所在区域的初始样式:z-index=0 opacity=0*/
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.banner1 .bannerInner1 div img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/*焦点区域的样式*/
+.banner1 .bannerTip1 {
+    position: absolute;
+    margin-right:-.51rem;
+    right: 50%;
+    bottom: 20px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.banner1 .bannerTip1 li {
+    float: left;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    background: lightblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner1 .bannerTip1 li.bg {
+    background: orange;
+}
+
+
+/*底部部分*/
+.ft{
+    margin-top: .38rem;
+    width: 100%;
+    height:2.13rem;
+    background-color: #eeeeee;
+    border-top: 3px solid #f7941d;
+}
+.ft .ft_u{
+    margin: .4rem auto;
+    width: 10.45rem;
+    /* overflow: hidden;*/
+}
+.ft .ft_u li{
+    float: left;
+    margin-left: .35rem;
+    padding-right: .35rem;
+    border-right: 1px solid #dddddd;
+}
+.ft .ft_u li:nth-child(1){
+    margin-left: 0;
+}
+.ft .ft_u li:nth-child(4){
+    border-right: none;
+    margin-left: .35rem;
+    padding-right: 0;
+}
+.ft .ft_u li p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #333;
+}
+.ft .ft_u li p img{
+    margin-right: 5px;
+    width: 17px;
+    height: 14px;
+}
+
+.ft .ft_u li:nth-child(3) p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.ft .ft_u li:nth-child(4) div{
+    margin-bottom: 20px;
+}
+.ft .ft_u li:nth-child(4) div img{
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+.ft .ft_u li:nth-child(4) div a{
+    position: relative;
+    line-height: 30px;
+}
+.ft .ft_u li:nth-child(4) div a em{
+    display: none;
+    position: absolute;
+    top: -14px;
+    left: 8px;
+    border: 5px solid #ccc;
+    border-color:#ccc transparent  transparent transparent ;
+}
+.ft .ft_u li:nth-child(4) div a i{
+    display: none;
+    position: absolute;
+    top: -16px;
+    left: 8px;
+    border: 5px solid #fff;
+    border-color:#fff transparent  transparent transparent ;
+}
+.ft .ft_u li:nth-child(4) a img:nth-child(2){
+    display: none;
+    position: absolute;
+    top: -1.45rem;
+    left: -.55rem;
+    width: 1.28rem;
+    height: 1.28rem;
+    border: 2px solid #ccc;
+}
+.ft .ft_u li:nth-child(4) a:hover img:nth-child(2){
+    display: block;
+}
+.ft .ft_u li:nth-child(4) a:hover em{
+    display: block;
+}
+.ft .ft_u li:nth-child(4) a:hover i{
+    display: block;
+}
